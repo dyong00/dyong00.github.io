@@ -1,0 +1,13 @@
+.skill {bottom: 0; height: 100px;width: 100px; left: 0; margin: auto; position: absolute; transform-style: preserve-3d;}
+#html .cube{ background-image: url(../img/html.jpg);} #html{ margin-left: 130px; font-size: 30px; animation: html 30s linear infinite;  } 
+		#sql .cube{ background-color: #222; background-image: url(../img/sql.jpg) } #sql{ margin-left: 330px; font-size: 35px; animation: sql 30s linear infinite;}
+		#java .cube{ background-color: #222; background-image: url(../img/java.png); text-shadow: 0px 0px 10px skyblue;} #java{ margin-left: 530px; font-size: 33px; animation: java 30s linear infinite;  }
+		#photoshop .cube{background-image: url(../img/photoshop.jpg);} #photoshop{margin-left: 730px; font-size: 33px; animation: photoshop 30s linear infinite;}
+		
+		@keyframes html {100% {transform: rotateY(360deg) rotateX(360deg) rotateZ(1080deg);}}
+		@keyframes sql {100% {transform: rotateY(360deg) rotateX(1080deg) rotateZ(360deg);}}
+		@keyframes java {100% {transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);}}
+		@keyframes photoshop {100% {transform: rotateY(720deg) rotateX(360deg) rotateZ(360deg);}}
+		.front {transform: translateZ(50px);} .back {transform: translateZ(-50px);} .left {transform: translateX(-50px) rotateY(90deg);}.right {transform: translateX(50px) rotateY(90deg);}.top {transform: translateY(-50px) rotateX(90deg);}.bottom {transform: translateY(50px) rotateX(90deg);}
+		.cube {height: 100%;left: 0;position: absolute;top: 0;width: 100%; color: snow; text-shadow: 0px 0px 10px snow; line-height: 100px; font-weight: bold; text-align: center;}	
+		#cube{position: relative; top: 170px; left: 250px; display:block;}

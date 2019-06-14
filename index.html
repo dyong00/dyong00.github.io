@@ -1,0 +1,207 @@
+<!docutypehtml>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> DYONG </title>
+		<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cube.css"/>
+		<link rel="stylesheet" type="text/css" href="css/button.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		
+	</head>
+	<body>
+		<section id="bar">
+			<ul><li><a href="#home">home</a></li>
+				<li><a href="#aboutme">About me</a></li>
+				<li><a href="#skill">My skill</a></li>
+				<li><a href="#like">My favorit</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li class="sns"><a href="https://www.facebook.com/hy00010" target="_blank"> <i class="fab fa-facebook-f  fa-fw "></i></a></li>
+        		<li class="sns"><a href="https://twitter.com/dyonge2?s=09" target="_blank"> <i class="fab fa-twitter fa-fw "></i></a></li>
+        		<li class="sns"><a href="https://www.instagram.com/dyong_e2/" target="_blank"> <i class="fab fa-instagram "></i></a></li>
+				<li class="sns"><a href="mailto:dyong00@tong.dongyang.ac.kr" > <i class="fas fa-envelope fa-fw "></i></a></li>
+			</ul>
+		</section>
+		
+		<section id="contents">
+		<section id="home">
+		<div class="active">
+		<img src="img/%EB%B9%8C%EB%A6%AC1.jpg" alt="not found"/>
+		</div>
+		<div>
+		<img src="img/%EB%B9%8C%EB%A6%AC2.jpg" alt="not found"/>
+		</div>
+		<div>
+		<img src="img/%EB%B9%8C%EB%A6%AC3.jpg" alt="not found"/>
+		</div>
+		<div>
+		<img src="img/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C4.jpg" alt="not found"/>
+		</div>
+		<script> var showImg, nextImg;
+		function fadeInOut(){
+			showImg = $("#home div:eq(0)");
+   			nextImg = $("#home div:eq(1)");
+
+   			nextImg.addClass("active");
+   			nextImg.css("opacity","0").animate({opacity:1},3000, function() {    
+         		$("#home").append( showImg );  
+      			showImg.removeClass("active"); 
+    		});
+
+		}
+		var timer = setInterval("fadeInOut()",3000);
+
+		$("div #home").hover(function(){clearInterval(timer)},
+							 function(){timer = setInterval("fadeInOut()",3000);}
+
+							);
+		</script>
+		</section>
+		<p style="margin-left: 612px; font-size: 40px; font-weight:bold; color: #666; margin-top: 350px; margin-bottom: 0px;">welcome</p>
+		<span class="line line1"></span>
+		<section id="aboutme">
+		<p>About me</p>
+		<img src="img/%EB%AF%BC%EC%A6%9D%EC%82%AC%EC%A7%84.jpg" alt="not found"/>
+		<div id="myintro">
+		Hello, my name is Shin Hyun Jung. 
+		<br>I am 20 years old now, <br>and I am majoring in computer information engineering at dong Yang Mirae University. <br>In fact, even if you write a self-introduction letter like this, <br>it'll pass because it's just a piece of writing, right It's really hard to write. <br>I'm just turning the translator. I'm just saying something.<br> I'll finish introducing myself. <br>If you're curious about my other information, scroll down!
+		</div>
+		<span class="line line2"></span>
+		</section>
+			
+		<section id="skill">
+		<p>Skill</p>
+			<section id="cube">
+			<label for="htmlbar">
+			<div id="html" class="skill">
+  				<div class="cube front"> HTML</div>
+  				<div class="cube back"> HTML</div>
+  				<div class="cube left"> HTML</div>
+  				<div class="cube right"> HTML</div>
+  				<div class="cube top"> HTML</div>
+  				<div class="cube bottom"> HTML</div>
+			</div> 
+			</label>
+			
+			<label for="sqlbar">
+			<div id="sql" class="skill"> 
+				<div class="cube front"> SQL</div>
+				<div class="cube back"> SQL</div>
+  				<div class="cube left"> SQL</div>
+  				<div class="cube right"> SQL</div>
+				<div class="cube top"> SQL</div>
+				<div class="cube bottom"> SQL</div> 
+			</div>
+			</label>
+			
+			<label for="javabar">
+			<div id="java" class="skill">  
+ 				<div class="cube front"> JAVA</div>
+				<div class="cube back"> JAVA</div>
+				<div class="cube left"> JAVA</div>
+				<div class="cube right"> JAVA</div>
+				<div class="cube top"> JAVA</div>
+  				<div class="cube bottom"> JAVA</div>
+			</div>
+			</label>
+			
+			<label for="psbar">
+			<div id="photoshop" class="skill">  
+ 				<div class="cube front"> PS</div>
+				<div class="cube back"> PS</div>
+				<div class="cube left"> PS</div>
+				<div class="cube right"> PS</div>
+  				<div class="cube top"> PS</div>
+				<div class="cube bottom"> PS</div>
+			</div>
+			</label>
+			</section>	
+			<div id="skillintro">Click on the cube, You will see my skill level</div>
+			<input type="radio" id="default" class="barck" name="default" checked/>
+			<input type="radio" id="htmlbar" class="barck" name="bar"/>
+			<input type="radio" id="sqlbar"  class="barck" name="bar"/>
+			<input type="radio" id="javabar"  class="barck" name="bar"/>
+			<input type="radio" id="psbar"  class="barck" name="bar"/>
+			<div class="bar default"></div>
+			<div class="bar htmlbar sqlbar javabar psbar"></div>
+		</section>
+		<span class="line line3"></span>
+		<section id="like">
+		<p>my favorite</p>
+		<p class="liketitle">music</p>
+			
+		<div class="music r">
+			<img src="img/%EB%B9%8C%EB%A6%AC.jpg" alt="not found"/>
+		<div class="likeinfo"> 
+			Her name is Billy Eileen. 
+			<br>She is a young singer who was born in 2001, 
+			<br>but she is a singer who is popular with her peculiar voice. 
+			<br>Billy Aik and badguy, especially on her track, 
+			<br>are also attracting a lot of attention with lots of 
+			<br>people on YouTube too.people on YouTube too.
+			<br>She is a young singer who was born in 2001, 
+			<br>but she is a singer who is popular with he
+			<br>Billy Aik and badguy, especially on her track, 
+			<br>are also attracting a lot of attention with lots of 
+			<br>people on YouTube oo people on YouTube too.
+			<br><a href="https://www.youtube.com/user/BillieEilishVEVO" target="_blank">Show BillieEilish</a></div>
+		</div>
+		
+			
+		<div class="music l">
+		<div class="likeinfo"> 
+			His name is Troy Sivan. He's gay. <br> But my voice is so good. <br> Among the songs, I like 'yououth' and  'fools' are the best.<br> "Only poor people will fall in love" is <br> the best part of the lyrics. <br>I'm actually listening to Colin Bailey's song, <br>and I should have included Colin's song, too.<br> But the writing is short.<br> I have to say something. <br>I hope the exam is over soon.<br>i love u. hahaha
+			<br><a href="https://www.youtube.com/user/TroyeSivan18" target="_blank">Show TroyeSivan</a>
+		</div>
+		<img src="img/%ED%8A%B8%EB%A1%9C%EC%9D%B4%EC%8B%9C%EB%B0%98.jpg" alt="not found"/>
+		</div>
+		
+		
+			<div class="music r">
+			<img src="img/%ED%97%A4%EC%9D%B4%EC%A6%88.jpg" alt="not found"/>
+		<div class="likeinfo"> 
+			Her name is Heize. <br>I don't have much to say anymore. <br>I'll just write the lyrics. <br>Yeah, I know what you're talking about.
+<br>You don't have to keep emphasizing it.
+I get it.
+<br>I don't know if you want to think rationally.
+<br>That's what you said.
+I tried to pretend to understand
+<br>Honestly, it was stuffy.
+<br>How the hell are we supposed to break up?
+<br>For what part of my future.
+<br>I don't know. Do what you want. 
+			<br><a href="https://www.youtube.com/channel/UCsXigGjbC_l4ttk-oahTfVg" target="_blank">Show heize</a></div>
+		</div>
+		<div style="clear: right"></div>
+		
+		</section>
+		<div style="clear: both;"></div>
+		<span class="line line4"></span>
+		<section id="contact">
+		<p>contact</p>
+		<div id="contactintro"> If you want contact to me, submit your form.</div>
+		<form method="GET" id="form">
+        <table>
+        <tr>
+        <th></th>
+        <td><input type="text" id=name class="input"  placeholder="Enter your name" autocomplete="off"/> </td>
+        </tr>
+        <tr>
+        <th></th>
+        <td><input type="email" class="input" id=email  placeholder="Enter Email" autocomplete="off"/> </td>
+        </tr>
+        <tr>
+        <th></th>
+        <td><textarea cols="22" rows="10" class="input" id=youmsg placeholder="Your Nessage" autocomplete="off"></textarea> </td>
+        </tr>      
+        </table>
+        <button class="button button--pipaluk button--text-thick" type="submit">SUBMIT</button>
+        </form>
+		</section>
+		</section>
+	</body>
+	<footer>
+		<p>ⓒ2019 designed web site Shin hyeon joeng</p>
+	</footer>
+</html>
